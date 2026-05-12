@@ -42,7 +42,7 @@ cd gym-wellness-tracker
 ### 2. Set up the database
 - Create a free project at [supabase.com](https://supabase.com)
 - In the SQL Editor, run the contents of `schema.sql`
-- Copy your connection string from Project Settings → Database
+- Copy your connection string from Project Settings → Database # Use Transaction pooler string
 
 ### 3. Run the backend
 ```bash
@@ -60,7 +60,6 @@ API running at `http://localhost:8000` — interactive docs at `http://localhost
 ```bash
 cd frontend
 npm install
-cp .env.example .env            # set VITE_API_URL=http://localhost:8000
 npm run dev
 ```
 App running at `http://localhost:5173`
