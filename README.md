@@ -50,7 +50,8 @@ cd backend
 python -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
 pip install -r requirements.txt
-cp .env.example .env            # add your DATABASE_URL
+cp .env.example .env            # Windows: copy .env.example .env
+# Go into the .env folder and replace the DATABASE_URL with your connection string
 uvicorn main:app --reload
 ```
 API running at `http://localhost:8000` — interactive docs at `http://localhost:8000/docs`
